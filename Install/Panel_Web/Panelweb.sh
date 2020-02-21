@@ -361,7 +361,7 @@ echo -e "\033[1;32m LEMBRE-SE INFORME A MESMA SENHA QUANDO SOLICITADO"
 echo ""
 echo -ne "\033[1;33m Enter, Para Prosseguir!\033[1;37m"; read
 apt-get install phpmyadmin -y
-php5enmod mcrypt
+phpenmod mcrypt
 service apache2 restart
 ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 apt-get install libssh2-1-dev libssh2-php -y > /dev/null 2>&1
